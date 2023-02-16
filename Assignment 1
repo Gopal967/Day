@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    // Get input from user
+    printf("Enter n value: ");
+    scanf("%d", &n);
+
+    // Print factors
+    printf("Factors are:\n");
+    for (i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            printf("%d\t", i);
+        }
+    }
+    return 0;
+}
